@@ -4,21 +4,33 @@
   <meta charset="UTF-8">
   <title>Student Performance Predictor</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="container">
-    <h1>Student Performance Predictor</h1>
-    
+    <h1>🎓 Student Performance Predictor</h1>
+    <p class="description">
+      Enter the student's details below to predict whether they are likely to pass the math exam.
+    </p>
+
+    <!-- Model Info -->
+    <div class="model-info">
+      <p><strong>Model Used:</strong> Random Forest Classifier</p>
+      
+    </div>
+
     <form id="predictForm">
       <label>Gender:
-        <select id="gender">
+        <select id="gender" required>
+          <option value="" disabled selected>Select gender</option>
           <option value="0">Female</option>
           <option value="1">Male</option>
         </select>
       </label>
 
       <label>Race/Ethnicity:
-        <select id="race">
+        <select id="race" required>
+          <option value="" disabled selected>Select group</option>
           <option value="0">Group A</option>
           <option value="1">Group B</option>
           <option value="2">Group C</option>
@@ -28,7 +40,8 @@
       </label>
 
       <label>Parental Education:
-        <select id="education">
+        <select id="education" required>
+          <option value="" disabled selected>Select education level</option>
           <option value="0">High School</option>
           <option value="1">Associate Degree</option>
           <option value="2">Bachelor's</option>
@@ -36,20 +49,25 @@
       </label>
 
       <label>Lunch:
-        <select id="lunch">
+        <select id="lunch" required>
+          <option value="" disabled selected>Select lunch type</option>
           <option value="0">Free/Reduced</option>
           <option value="1">Standard</option>
         </select>
       </label>
 
       <label>Test Preparation:
-        <select id="prep">
+        <select id="prep" required>
+          <option value="" disabled selected>Select test prep status</option>
           <option value="0">None</option>
           <option value="1">Completed</option>
         </select>
       </label>
 
-      <button type="submit">Predict</button>
+      <div class="button-group">
+        <button type="submit">🔍 Predict</button>
+        <button type="reset" class="reset-btn">🔄 Reset</button>
+      </div>
     </form>
 
     <div id="result"></div>
