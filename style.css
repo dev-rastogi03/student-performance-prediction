@@ -54,3 +54,44 @@ button:hover {
   font-size: 18px;
   text-align: center;
 }
+
+.description {
+  font-size: 14px;
+  color: #444;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.model-info {
+  background: #eef6ff;
+  border-left: 4px solid #007bff;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.reset-btn {
+  background-color: #6c757d;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}
