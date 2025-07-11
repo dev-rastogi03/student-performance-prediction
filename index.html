@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Performance Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Performance Predictor</h1>
+    
+    <form id="predictForm">
+      <label>Gender:
+        <select id="gender">
+          <option value="0">Female</option>
+          <option value="1">Male</option>
+        </select>
+      </label>
+
+      <label>Race/Ethnicity:
+        <select id="race">
+          <option value="0">Group A</option>
+          <option value="1">Group B</option>
+          <option value="2">Group C</option>
+          <option value="3">Group D</option>
+          <option value="4">Group E</option>
+        </select>
+      </label>
+
+      <label>Parental Education:
+        <select id="education">
+          <option value="0">High School</option>
+          <option value="1">Associate Degree</option>
+          <option value="2">Bachelor's</option>
+        </select>
+      </label>
+
+      <label>Lunch:
+        <select id="lunch">
+          <option value="0">Free/Reduced</option>
+          <option value="1">Standard</option>
+        </select>
+      </label>
+
+      <label>Test Preparation:
+        <select id="prep">
+          <option value="0">None</option>
+          <option value="1">Completed</option>
+        </select>
+      </label>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
